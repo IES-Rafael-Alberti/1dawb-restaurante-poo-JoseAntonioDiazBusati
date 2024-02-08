@@ -1,6 +1,6 @@
 class Pedido(val numero: Int = ++contPedidos,var platos: MutableList<Plato>,var estado: String = "pendiente") {
     companion object {
-        var contPedidos = 0
+        var contPedidos = 1
     }
     fun agregarPlato(plato: Plato) {
         platos.add(plato)
